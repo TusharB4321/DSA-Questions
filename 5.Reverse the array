@@ -1,0 +1,24 @@
+public class ReverseArray {
+    public static void main(String[] args) {
+        int[]arr={2,4,6,8,10,12,14};
+        Reverse(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    private static void Reverse(int[] arr) {
+        int start=0;
+        int end=arr.length-1;
+       while (start<end){
+           swap(arr,start,end);
+           start++;
+           end--;
+       }
+
+    }
+
+    private static void swap(int[] arr, int start, int end) {
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+    }
+}
