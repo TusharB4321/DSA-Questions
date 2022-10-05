@@ -1,0 +1,23 @@
+public class SearchString {
+    public static void main(String[] args) {
+        String name="Tushar";
+        char target='m';
+        System.out.println(SearchChar(name,target));
+    }
+
+    static int SearchChar(String str,char target){
+
+        if (str.length()==0){
+            return -1;
+        }
+        for (int index=0;index<str.length();index++){
+
+            if (target==str.charAt(index)){
+                return 1;
+            }
+        }
+        return -1;
+    }
+}
+
+
