@@ -1,0 +1,44 @@
+public class Max2d_Array {
+    public static void main(String[] args) {
+        int[][]arr={
+                {10,15,20,27},
+                {2,4,20,-3,600},
+                {100,200,500}
+        };
+        int ans=maxValue(arr);
+        System.out.println(ans);
+
+    }
+    static int maxValue(int[][]arr){
+        if (arr.length==0){
+            return -1;
+        }
+
+        int max=Integer.MIN_VALUE;
+//        for (int row = 0; row <arr.length ; row++) {
+//            for (int col = 0; col <arr[row].length ; col++) {
+//
+//                int element=arr[row][col];
+//                if (max<element){
+//                    max=element;
+//
+//                }
+//
+//            }
+//
+//        }
+  
+    //Enhance for loop
+
+        for (int[]row:arr){
+            for (int col:row){
+                if (max<col){
+                    max=col;
+                }
+
+            }
+        }
+
+        return max;
+    }
+}
