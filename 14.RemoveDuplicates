@@ -1,0 +1,15 @@
+public class RemoveDupli {
+    public static void main(String[] args) {
+
+        int[]arr={2,4,6,8,10,2,4,6,8,10};
+
+        Set<Integer>number=new HashSet<>();
+
+        for (int i = 0; i <arr.length-1 ; i++) {
+            number.add(arr[i]);
+
+        }
+        number.forEach(integer -> System.out.print(integer+" "));
+
+        }
+    }
