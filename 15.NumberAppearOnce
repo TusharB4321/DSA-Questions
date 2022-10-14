@@ -1,0 +1,16 @@
+public class AppearOnce {
+    public static void main(String[] args) {
+        int[]arr={1,1,2,3,3,4,4,5,5};
+
+        int result=number(arr);
+        System.out.println(result);
+    }
+    static int number(int[]arr){
+        int res=0;
+        for(int i:arr){
+            res^=i;
+        }
+        return res;
+    }
+
+}
